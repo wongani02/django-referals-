@@ -1,0 +1,15 @@
+{% extends 'referals/base.html' %}
+
+{% block title %}
+Referal page
+{% endblock title%}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Submit</button>
+</form>
+
+
+{% endblock content %}
